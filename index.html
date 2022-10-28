@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba #2</title>
+    <link rel="manifest" href="./icon/manifest.json">
+
+    <!-- Bootstrap CDN delivery -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-success text-white" style="position:fixed; right: 2rem; bottom: 2rem;text-align: center; border-radius: 50%; padding: 1.2rem;z-index: 100;">Prueba #2<br>⏰<br>5h 25min</div>
+
+    <!-------------------------------------------------------------->
+    <!--                             NavBar                       -->
+    <!-------------------------------------------------------------->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarOptions" aria-controls="navbarOptions" aria-expanded="false" aria-label="Toggle navigation" id="navbar-toggler">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="var(--primary)" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarOptions">
+            <div class="navbar-nav container">
+                <a class="nav-item nav-link active" href="#quien-somos">¿Quiénes somos?</a>
+                <a class="nav-item nav-link" href="#como-lo-hacemos">¿Cómo lo hacemos?</a>
+                <a class="nav-item nav-link" href="#">Productos llenos de azucar</a>
+                <a class="nav-item nav-link" href="#">¿Cómo comerlos?</a>
+                <a class="nav-item nav-link" href="#">¿Calorías?</a>
+                <a class="nav-item nav-link" href="#contactanos">Contactános</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-------------------------------------------------------------->
+    <!--                              Hero                        -->
+    <!-------------------------------------------------------------->
+
+    <div class="hero">
+        <div class="logo">
+            <div class="container pt-3">
+                <img src="./assets/Enmascarar grupo 98.png" alt="Logo de dulces placeres" class="mt-5 mb-4 mb-md-2">
+            </div>
+        </div>
+
+        <div class="container pt-5">
+            <div class="col-md-7">
+                <h2 class="text-muted">En fiestas como las de Halloween, Navidad..., el consumo de dulces por los niños, aumenta.</h2>
+
+                <p class="text-muted">Son tantos los dulces que protagonizan esas fiestas, que te preguntas qué tan dañinas pueden ser las golosinas para tus hijos. Hay padres que no permiten a sus hijos ni siquiera comer un dulce porque les parece que no tienen nada bueno, y hay otros que permiten uno al día o uno a la semana, y otros todavía que son muy</p>
+
+                <form class="hero-form mt-5">
+                    <input type="text" name="hero-email" id="hero-email-input" class="form-control" placeholder="Escribe tu email">
+                    <input type="submit" class="btn btn-primary" value="LO NECESITO" id="hero-form-submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------->
+    <!--                         Sección 1                        -->
+    <!-------------------------------------------------------------->
+
+    <div class="seccion-1">
+        <img class="row d-md-none w-100 m-0" src="./assets/Enmascarar grupo 100.png" alt="golosinas">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-6 p-5 d-none d-md-block">
+                    <img src="./assets/Imagen 3.png" alt="gusanitos de goma" class="img-fluid">
+                </div>
+    
+                <div class="col-md-6 p-4 d-flex flex-column justify-content-center">
+                    <h2 id="quien-somos">¿Quiénes somos?</h2>
+
+                    <p>Valor nutricional: La glucosa que tienen los dulces es el combustible para las neuronas del cerebro y brinda energía, sin embargo esta ingesta debe ser moderada porque puede causar serios desbalances en el cuerpo y obesidad infantil. Según las recomendaciones nutricionales de los expertos nutricionistas, los niños no deberían consumir más de 25 a 30 gramos de azúcar.</p>
+                </div>
+            </div>
+            
+            <div class="row flex-column-reverse flex-md-row">
+                <div class="col-md-6 p-4 d-flex flex-column justify-content-center">
+                    <h2 id="como-lo-hacemos">¿Cómo lo hacemos?</h2>
+
+                    <p>Dientes: El azúcar en la boca se convierte en ácido que dura aproximadamente media hora dañando los dientes después de consumido. Un reciente estudio de la Universidad de Murcia revela que los niños que consumen dulces a diario incrementan en un 55 por ciento su riesgo de necesitar tratamientos odontológicos.</p>
+                </div>
+
+                <div class="col-md-6 p-0 p-md-5">
+                    <img src="./assets/Imagen 4.png" alt="donas" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center flex-column flex-md-row justify-content-center pt-4 pb-4 datos-de-seccion">
+                <img src="./assets/Trazado 643.png" alt="bombillo rosado" class="m-0 m-md-5 mb-5">
+                <p class="flex-grow text-muted">
+                    Por ejemplo, las harinas, los helados, los chicles, por esto es que es más difícil controlar este consumo. Los dulces pueden causar más problemas de sobrepeso que los fritos, porque generan mayores reservorios de grasa en el cuerpo.
+                </p>
+            </div>
+        </div>       
+    </div>
+
+    <!-------------------------------------------------------------->
+    <!--                         Sección 2                        -->
+    <!-------------------------------------------------------------->
+
+    <div class="seccion-2">
+        <div class="container pt-5 pb-5">
+            <h2 class="text-center">¿Cómo usar nuestros dulces?</h2>
+            <div class="row pl-5 pr-5 p-md-0">
+
+                <div class="col-lg-3 col-md-6 col-uso-de-dulces">
+                    <img src="./assets/Grupo 731.png" alt="chocolatina" width="85px" height="85px">
+                    <div class="contador">1</div>
+                    <p class="contenido">
+                        Dientes: El azúcar en la boca se convierte en ácido que dura aproximadamente.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-uso-de-dulces">
+                    <img src="./assets/Grupo 732.png" alt="bateria" width="85px" height="85px">
+                    <div class="contador">2</div>
+                    <p class="contenido">
+                        Un reciente estudio de la Universidad de Murcia revela que los niños que consumen dulces a diario incrementan.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-uso-de-dulces">
+                    <img src="./assets/Grupo 733.png" alt="mano" width="85px" height="85px">
+                    <div class="contador">3</div>
+                    <p class="contenido">
+                        Es decir que la frecuencia en la ingesta de azúcares refinados genera problemas odontológicos en los niños, en su mayoría caries.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-uso-de-dulces">
+                    <img src="./assets/Grupo 734.png" alt="persona usando audifonos" width="85px" height="85px">
+                    <div class="contador">4</div>
+                    <p class="contenido">
+                        Estómago: Las golosinas están hechas de gran cantidad de azúcar y grasas, algunas veces animal.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="d-flex align-items-center flex-column flex-md-row justify-content-center pt-3 pb-5 datos-de-seccion">
+                <img src="./assets/Trazado 662.png" alt="bombillo blanco" class="m-0 m-md-5 mb-5">
+                <p class="flex-grow text-muted">
+                    Reemplaza los refrescos azucarados por agua, solo de vez en cuando ofrece jugos naturales. Eso debe ser aplicado desde que los niños sean muy pequeños.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------->
+    <!--                         Sección 3                        -->
+    <!-------------------------------------------------------------->
+
+    <div class="seccion-3">
+        <div class="container pt-5 pb-5">
+            <h2 class="text-center">Hablemos ahora de la cotidianidad.</h2>
+            <ul class="trucos-de-consumo">
+                <li>
+                    <span>Primero, no ofrezcas golosinas tras las comidas cotidianas sino eventualmente, es decir, no más de una vez a la semana.</span>
+                </li>
+
+                <li>
+                    <span>Reemplaza los refrescos azucarados por agua, solo de vez en cuando ofrece jugos naturales. Eso debe ser aplicado desde que los niños son muy pequeños.</span>
+                </li>
+
+                <li>
+                    <span>Sustituye los postres por frutas, frutos secos y cereales.</span>
+                </li>
+
+                <li>
+                    <span>No uses los dulces como recompensa o premio a la conducta de los niños.</span>
+                </li>
+
+                <li>
+                    <span>Por último no mezcles dos o más alimentos con azúcar en la misma comida, por ejemplo, no mezclar el cereal azucarado con jugo, zumo o néctar en el desayuno. Tampoco se debe mezclar una tarta y refresco en la merienda. Tras la comida en la que se tomó debida carbonatada no ofrezcas de postre un helado. Esos son solo algunos trucos que puedes implementar para que tus hijos tengan una dieta más saludable.</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <!-------------------------------------------------------------->
+    <!--                        Contáctanos                       -->
+    <!-------------------------------------------------------------->
+
+    <div class="contactanos">
+        <div class="container p-5">
+            <h2 class="text-center" id="contactanos">Contáctanos</h2>
+
+            <p class="text-center text-muted text-larger instrucciones mb-5">Degusta el más delicioso dulce de la temporada, escribe tus datos.</p>
+
+            <form class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" name="nombre" id="contactanos-nombre" class="form-control" placeholder="Nombre" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" name="email" id="contactanos-email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="tel" name="celular" id="contactanos-celular" class="form-control" placeholder="Celular" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="direccion" id="contactanos-direccion" class="form-control" placeholder="Dirección" required>
+                    </div>
+                    <div class="col-12">
+                        <input type="text" name="interes" id="contactanos-interes" class="form-control" placeholder="Producto de interés" required>
+                    </div>
+                    <div class="col-12">
+                        <textarea name="mensaje" id="contactanos-mensaje" cols="20" rows="10" class="form-control" placeholder="Mensaje"></textarea>
+                    </div>
+                </div>
+
+                <div class="envio">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            <a href="#" class="text-muted text-underlined">Acepto términos y condiciones</a>
+                        </label>
+                    </div>
+
+                    <button type="submit" id="contactanos-submit">
+                        <img src="./assets/Grupo 935.png" alt="Enviar Mensaje">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Bootstrap CDN delivery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

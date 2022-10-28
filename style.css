@@ -1,0 +1,272 @@
+/*-------------------------- General --------------------------*/
+:root{
+    --light-pink: #fcc2da;
+    --light-grey: #eaeaea;
+    --pink: #eebfcf;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-bottom: 2.4rem;
+}
+
+.datos-de-seccion p{
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    text-align: center;
+    max-width: 24rem;
+}
+
+/*-------------------------- Navbar --------------------------*/
+
+nav.navbar{
+    background-color: var(--light-pink) !important;
+    padding: 0;
+}
+
+#navbar-toggler{
+    position: absolute;
+    right: 1rem; top: 1rem;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+#navbar-toggler:focus{
+    outline: none;
+}
+
+.nav-item{
+    padding: 1rem;
+}
+
+.nav-item.active{
+    color: var(--primary) !important;
+}
+
+/*--------------------------- Hero ---------------------------*/
+
+.hero{
+    background: var(--pink);
+    text-align: center;
+}
+
+.hero h2{
+    font-weight: 300;
+    font-size: 2.4rem;
+}
+
+.hero-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-form #hero-email-input, .hero-form #hero-form-submit{
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+#hero-email-input{
+    padding: 1rem;
+}
+
+#hero-form-submit{
+    width: fit-content;
+    margin: auto;
+}
+
+.logo{
+    background-color: white;
+    text-align: left;
+}
+
+/*------------------------ Sección 1 -------------------------*/
+
+.seccion-1{
+    background-color: #f8f4f3;
+}
+
+.seccion-1 .row{
+    text-align: center;
+}
+
+/*------------------------ Sección 2 -------------------------*/
+
+.seccion-2{
+    background-color: var(--pink);
+}
+
+.col-uso-de-dulces{
+    padding: 2.0rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.col-uso-de-dulces .contador{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0.6rem;
+}
+
+/*------------------------ Sección 3 -------------------------*/
+
+.seccion-3 .trucos-de-consumo{
+    font-size: 1.14rem;
+    list-style-image: url('./assets/Trazado 649.png');
+}
+
+.seccion-3 .trucos-de-consumo li{
+    line-height: 2.4rem;
+    padding-left: 0.8rem;
+}
+
+.seccion-3 .trucos-de-consumo li span{
+    position: relative;
+    bottom: 0.7rem;
+}
+
+/*-------------------------- Contáctanos--------------------------*/
+
+.contactanos{
+    background-color: var(--pink);
+}
+
+.contactanos .instrucciones{
+    font-size: 1.2rem;
+}
+
+.contactanos form .row div{
+    margin-bottom: 0.3rem;
+    padding: 0.3rem;
+}
+
+.contactanos .envio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactanos .envio .form-check{
+    margin: 2rem 0;
+}
+
+#contactanos-submit{
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#contactanos-submit:focus{
+    outline: none;
+}
+
+#contactanos-submit img{
+    width: 12rem;
+}
+
+/*----------------------------------------------------------------*/
+/*---------------------Bootstrap Media Queries--------------------*/
+/*----------------------------------------------------------------*/
+
+/* // Small devices (576px and up) */
+@media (min-width: 576px) {
+    
+}
+
+/* // Medium devices (768px and up) */
+@media (min-width: 768px) { 
+
+    .datos-de-seccion p{
+        text-align: left;
+        max-width: fit-content;
+    }
+
+    /*--------------------------- Hero ---------------------------*/
+
+    .hero{
+        background-color: white;
+        background-image: url('./assets/Grupo 932.png');
+        background-position: right -100% center;
+        background-size: 75%;
+        background-repeat: no-repeat;
+        text-align:left;
+    }
+
+    .logo{
+        background-color: transparent;
+    }
+
+    .hero-form{
+        flex-direction: row;
+    }
+
+    #hero-email-input{
+        width: 120%;
+        background-color: var(--light-grey);
+        padding: 0.6rem 1rem;
+        border: none;
+        margin-right: 1rem;
+    }
+    
+    #hero-form-submit{
+        padding: 0.6rem 2rem;
+    }
+
+    /*------------------------ Sección 1 -------------------------*/
+
+    .seccion-1 .row:nth-child(2n+1){
+        text-align: left;
+    }
+
+    .seccion-1 .row:nth-child(2n){
+        text-align: right;
+    }
+}
+
+/* // Large devices (992px and up) */
+@media (min-width: 992px) { 
+
+    /*-------------------------- Navbar --------------------------*/
+
+    nav.navbar{
+        background-color: var(--light-pink) !important;
+    }
+
+    .navbar-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nav-item{
+        padding: 1.2rem;
+    }
+
+    .nav-item:hover{
+        color: var(--primary) !important;
+    }
+
+    .nav-item.active{
+        border-bottom: solid 0.1rem var(--primary);
+    }
+
+    /*--------------------------- Hero ---------------------------*/
+
+    #hero-email-input{
+        width: 100%;
+    }
+}
+
+/* // Extra large devices (1200px and up) */
+@media (min-width: 1200px) {
+
+}
